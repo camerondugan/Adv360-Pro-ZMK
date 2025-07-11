@@ -42,7 +42,7 @@
 
         the {
             bindings = <&the>;
-            key-positions = <19 31 40>;
+            key-positions = <19 40 17>;
         };
 
         of {
@@ -53,6 +53,11 @@
         to {
             bindings = <&TO>;
             key-positions = <19 25>;
+        };
+
+        in {
+            bindings = <&in>;
+            key-positions = <24 54>;
         };
     };
 
@@ -83,6 +88,13 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp O>;
             label = "TO";
+        };
+
+        in: in {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N>;
+            label = "IN";
         };
     };
 
