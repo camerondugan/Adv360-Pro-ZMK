@@ -36,7 +36,7 @@
         compatible = "zmk,combos";
 
         because {
-            bindings = <&none>;
+            bindings = <&because>;
             key-positions = <51 49>;
         };
     };
