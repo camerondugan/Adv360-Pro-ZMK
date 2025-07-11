@@ -39,14 +39,50 @@
             bindings = <&because>;
             key-positions = <51 49>;
         };
+
+        the {
+            bindings = <&the>;
+            key-positions = <19 31 40>;
+        };
+
+        of {
+            bindings = <&of>;
+            key-positions = <25 32>;
+        };
+
+        to {
+            bindings = <&TO>;
+            key-positions = <19 25>;
+        };
     };
 
     macros {
         because: because {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
+            bindings = <&kp B &kp E &kp C &kp A &kp U &kp S &kp E>;
             label = "BECAUSE";
+        };
+
+        the: the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+            label = "THE";
+        };
+
+        of: of {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp F>;
+            label = "OF";
+        };
+
+        TO: to {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp O>;
+            label = "TO";
         };
     };
 
