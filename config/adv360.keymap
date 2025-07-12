@@ -59,6 +59,86 @@
             bindings = <&in>;
             key-positions = <24 54>;
         };
+
+        all {
+            bindings = <&all>;
+            key-positions = <29 43>;
+        };
+
+        above {
+            bindings = <&above>;
+            key-positions = <29 51 50 25>;
+        };
+
+        add {
+            bindings = <&myadd>;
+            key-positions = <29 31>;
+        };
+
+        air {
+            bindings = <&air>;
+            key-positions = <29 18 24>;
+        };
+
+        after {
+            bindings = <&after>;
+            key-positions = <29 32 17>;
+        };
+
+        again {
+            bindings = <&again>;
+            key-positions = <29 33 24 54>;
+        };
+
+        almost {
+            bindings = <&almost>;
+            key-positions = <29 30 19 55 43>;
+        };
+
+        also {
+            bindings = <&also>;
+            key-positions = <29 43 30>;
+        };
+
+        always {
+            bindings = <&always>;
+            key-positions = <29 16 22 43>;
+        };
+
+        an {
+            bindings = <&an>;
+            key-positions = <29 54>;
+        };
+
+        and {
+            bindings = <&and>;
+            key-positions = <29 54 31>;
+        };
+
+        animal {
+            bindings = <&animal>;
+            key-positions = <29 24 43 54>;
+        };
+
+        another {
+            bindings = <&another>;
+            key-positions = <29 54 25 19>;
+        };
+
+        answer {
+            bindings = <&answer>;
+            key-positions = <29 54 17 16 18>;
+        };
+
+        any {
+            bindings = <&any>;
+            key-positions = <29 22>;
+        };
+
+        are {
+            bindings = <&are>;
+            key-positions = <29 18 17>;
+        };
     };
 
     macros {
@@ -95,6 +175,125 @@
             #binding-cells = <0>;
             bindings = <&kp I &kp N>;
             label = "IN";
+        };
+
+        all: all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp L>;
+            label = "ALL";
+        };
+
+        about: about {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp B &kp O &kp U &kp T>;
+            label = "ABOUT";
+        };
+
+        above: above {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp B &kp O &kp V &kp E>;
+            label = "ABOVE";
+        };
+
+        myadd: myadd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp D &kp D>;
+            label = "MYADD";
+        };
+
+        after: after {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp F &kp T &kp E &kp R>;
+            label = "AFTER";
+        };
+
+        again: again {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp G &kp A &kp I &kp N>;
+            label = "AGAIN";
+        };
+
+        air: air {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp I &kp R>;
+            label = "AIR";
+        };
+
+        almost: almost {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp M &kp O &kp S &kp T>;
+            label = "ALMOST";
+        };
+
+        also: also {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp S &kp O>;
+            label = "ALSO";
+        };
+
+        always: always {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp W &kp A &kp Y &kp S>;
+            label = "ALWAYS";
+        };
+
+        an: an {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N>;
+            label = "AN";
+        };
+
+        and: and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp D>;
+            label = "AND";
+        };
+
+        animal: animal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp I &kp M &kp A &kp L>;
+            label = "ANIMAL";
+        };
+
+        another: another {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp O &kp T &kp H &kp E &kp R>;
+            label = "ANOTHER";
+        };
+
+        answer: answer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp S &kp W &kp E &kp R>;
+            label = "ANSWER";
+        };
+
+        any: any {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp Y>;
+            label = "ANY";
+        };
+
+        are: are {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp R &kp E>;
+            label = "ARE";
         };
     };
 
