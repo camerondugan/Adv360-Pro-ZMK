@@ -162,6 +162,21 @@
             bindings = <&as>;
             key-positions = <29 30>;
         };
+
+        ask {
+            bindings = <&ask>;
+            key-positions = <29 30 42>;
+        };
+
+        at {
+            bindings = <&at>;
+            key-positions = <29 19>;
+        };
+
+        away {
+            bindings = <&away>;
+            key-positions = <29 16 22 70>;
+        };
     };
 
     macros {
@@ -338,6 +353,27 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp S>;
             label = "AS";
+        };
+
+        ask: ask {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp S &kp K>;
+            label = "ASK";
+        };
+
+        at: at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp T>;
+            label = "AT";
+        };
+
+        away: away {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp W &kp A &kp Y>;
+            label = "AWAY";
         };
     };
 
