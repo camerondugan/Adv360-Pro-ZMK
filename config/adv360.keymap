@@ -45,7 +45,7 @@
 
         the {
             bindings = <&the>;
-            key-positions = <19 40 17>;
+            key-positions = <19 40>;
         };
 
         of {
@@ -95,7 +95,7 @@
 
         almost {
             bindings = <&almost>;
-            key-positions = <29 30 19 55 43>;
+            key-positions = <29 55 43>;
         };
 
         also {
@@ -141,6 +141,26 @@
         are {
             bindings = <&are>;
             key-positions = <29 18 17>;
+        };
+
+        about {
+            bindings = <&about>;
+            key-positions = <29 51 25 23>;
+        };
+
+        along {
+            bindings = <&along>;
+            key-positions = <29 43 54 33>;
+        };
+
+        around {
+            bindings = <&around>;
+            key-positions = <29 18 25 23 31>;
+        };
+
+        as {
+            bindings = <&as>;
+            key-positions = <29 30>;
         };
     };
 
@@ -297,6 +317,27 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp R &kp E>;
             label = "ARE";
+        };
+
+        along: along {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp O &kp N &kp G>;
+            label = "ALONG";
+        };
+
+        around: around {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp R &kp O &kp U &kp N &kp D>;
+            label = "AROUND";
+        };
+
+        as: as {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp S>;
+            label = "AS";
         };
     };
 
